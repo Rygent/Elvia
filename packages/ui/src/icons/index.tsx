@@ -1,3 +1,14 @@
 export * from './hamburger';
 
-export { ArrowRight, ChevronDown, ExternalLink, Laptop, Moon, Sparkles, Sun, X } from 'lucide-react';
+export {
+	ArrowRight,
+	ChevronDown,
+	ChevronRight,
+	ExternalLink,
+	Laptop,
+	Moon,
+	Sparkles,
+	Sun,
+	Text,
+	X
+} from 'lucide-react';
