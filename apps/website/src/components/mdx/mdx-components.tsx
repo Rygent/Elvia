@@ -5,25 +5,31 @@ import { cn } from '@elvia/utils';
 
 export const components = {
 	h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-		<h1 className={cn('mt-2 scroll-m-20 text-4xl font-bold', className)} {...props} />
+		<h1 className={cn('mt-2 scroll-m-20 text-4xl font-bold text-foreground', className)} {...props} />
 	),
 	h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
 		<h2
-			className={cn('mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0', className)}
+			className={cn(
+				'mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight text-foreground first:mt-0',
+				className
+			)}
 			{...props}
 		/>
 	),
 	h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-		<h3 className={cn('mt-8 scroll-m-20 text-xl font-semibold tracking-tight', className)} {...props} />
+		<h3 className={cn('mt-8 scroll-m-20 text-xl font-semibold tracking-tight text-foreground', className)} {...props} />
 	),
 	h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-		<h4 className={cn('mt-8 scroll-m-20 text-lg font-semibold tracking-tight', className)} {...props} />
+		<h4 className={cn('mt-8 scroll-m-20 text-lg font-semibold tracking-tight text-foreground', className)} {...props} />
 	),
 	h5: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-		<h5 className={cn('mt-8 scroll-m-20 text-lg font-semibold tracking-tight', className)} {...props} />
+		<h5 className={cn('mt-8 scroll-m-20 text-lg font-semibold tracking-tight text-foreground', className)} {...props} />
 	),
 	h6: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
-		<h6 className={cn('mt-8 scroll-m-20 text-base font-semibold tracking-tight', className)} {...props} />
+		<h6
+			className={cn('mt-8 scroll-m-20 text-base font-semibold tracking-tight text-foreground', className)}
+			{...props}
+		/>
 	),
 	a: ({ className, ...props }: React.HTMLAttributes<HTMLAnchorElement>) => (
 		<a className={cn('font-medium underline underline-offset-4', className)} {...props} />
